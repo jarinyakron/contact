@@ -1,50 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <title>ชำระเงิน</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ชำระเงิน | L.C.C</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500&display=swap" rel="stylesheet">
+
   <style>
-    body {
-      margin: 0;
-      font-family: "Prompt", sans-serif;
-      background: #ffe6f0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+    body{
+      margin:0;
+      font-family:'Mitr', sans-serif;
+      background: linear-gradient(180deg, #001faaef, #ffbb00);
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
     }
-    .box {
-      background: white;
-      padding: 20px;
-      border-radius: 20px;
-      text-align: center;
-      max-width: 350px;
-      width: 90%;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+
+    .box{
+      background:#fff;
+      padding:28px 22px;
+      border-radius:24px;
+      text-align:center;
+      width:90%;
+      max-width:360px;
+      box-shadow:0 20px 45px rgba(0,0,0,.35);
     }
-    h2 {
-      color: #e91e63;
-      margin-bottom: 10px;
+
+    .box h1{
+      font-size:22px;
+      font-weight:400;
+      margin-bottom:14px;
+      color:#001faaef;
     }
-    img {
-      width: 100%;
-      max-width: 280px;
-      border-radius: 10px;
+
+    .qr{
+      width:100%;
+      max-width:260px;
+      border-radius:16px;
+      margin-bottom:14px;
     }
-    p {
-      margin-top: 10px;
-      color: #555;
-      font-size: 14px;
+
+    .desc{
+      font-size:14px;
+      opacity:.85;
+      margin-bottom:18px;
+    }
+
+    .back{
+      display:inline-block;
+      padding:10px 26px;
+      border-radius:999px;
+      border:1px solid #001faaef;
+      text-decoration:none;
+      font-size:14px;
+      color:#001faaef;
+      transition:.25s;
+    }
+
+    .back:hover{
+      background:#001faaef;
+      color:#fff;
     }
   </style>
 </head>
+
 <body>
 
   <div class="box">
-    <h2>สแกน QR Code</h2>
-    <img src="image/620721.jpg" alt="QR Code">
-    <p>เพื่อชำระเงินงาน 40 ปี LCC</p>
+    <h1>สแกน QR Code</h1>
+
+    <!-- ใส่รูป QR ของคุณตรงนี้ -->
+    <img src="image/620721.jpg" class="qr" alt="QR Code ชำระเงิน">
+
+    <p class="desc">
+      สำหรับชำระเงินงาน 40 ปี L.C.C
+    </p>
+
+    <a href="index.html" class="back">
+      ← ติดต่อเรา
+    </a>
   </div>
 
 </body>
