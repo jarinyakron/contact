@@ -12,27 +12,33 @@
 
   <style>
     :root{
-      --brand-dark: #ffbb00;
+      --brand-dark: #ffd900;
       --brand-main: #0022b9ef;
       --brand-soft: #072cff;
    
     }
 
     *{ box-sizing: border-box; }
-
-    body{
-      margin:0;
-      font-family:'Mitr', sans-serif;
-      background: linear-gradient(180deg, var(--brand-main), var(--brand-dark));
-      color:#000000;
-    }
-
+body{
+  margin:0;
+  font-family:'Mitr', sans-serif;
+  background: linear-gradient(180deg, var(--brand-main), var(--brand-dark));
+  color:#ffd000; /* ตัวหนังสือส่วนหลัก = ขาว */
+}
     main.wrap{
       max-width: 1100px;
       margin: 0 auto;
       padding: 52px 20px 42px;
     }
+footer.footer-section{
+  background: var(--brand-dark);
+  color:#000000; /* ตัวหนังสือ footer = ดำ */
+}
 
+footer.footer-section h2,
+footer.footer-section p{
+  color:#000000;
+}
     /* ===== Header ===== */
     .contact-center{
       display:flex;
@@ -47,13 +53,12 @@
       margin-bottom: 8px;
     }
 
-    .title{
-      font-size: 34px;
-      font-weight: 300;
-      letter-spacing: 1px;
-      margin: 0 0 20px;
-    }
-
+.title{
+  font-size: 34px;
+  font-weight: 500;   /* จาก 300 → 500 (หนาขึ้นชัด) */
+  letter-spacing: 1px;
+  margin: 0 0 20px;
+}
     /* ===== Contact Buttons ===== */
     .contact-list{
       width:100%;

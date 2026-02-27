@@ -7,83 +7,73 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <style>
     body{
       margin:0;
       font-family:'Mitr', sans-serif;
       background: linear-gradient(180deg, #001faaef, #ffbb00);
+      min-height:100vh;
       display:flex;
+      flex-direction:column;
       justify-content:center;
       align-items:center;
-      height:100vh;
-    }
-
-    .box{
-      background:#fff;
-      padding:28px 22px;
-      border-radius:24px;
       text-align:center;
-      width:90%;
-      max-width:360px;
-      box-shadow:0 20px 45px rgba(0,0,0,.35);
+      color:#ffffff;
     }
 
-    .box h1{
-      font-size:22px;
-      font-weight:400;
-      margin-bottom:14px;
-      color:#001faaef;
+    h1{
+      font-size:24px;
+      font-weight:600;
+      margin-bottom:16px;
     }
 
     .qr{
-      width:100%;
-      max-width:260px;
-      border-radius:16px;
-      margin-bottom:14px;
+      width:90%;
+      max-width:280px;
+      border-radius:20px;
+      box-shadow:0 12px 30px rgba(0,0,0,.35);
+      margin-bottom:16px;
     }
 
     .desc{
       font-size:14px;
-      opacity:.85;
-      margin-bottom:18px;
+      opacity:.9;
+      margin-bottom:20px;
     }
 
     .back{
       display:inline-block;
-      padding:10px 26px;
+      padding:10px 28px;
       border-radius:999px;
-      border:1px solid #001faaef;
+      border:1.5px solid #ffffff;
       text-decoration:none;
       font-size:14px;
-      color:#001faaef;
+      color:#ffffff;
       transition:.25s;
     }
 
     .back:hover{
-      background:#001faaef;
-      color:#fff;
+      background:#ffffff;
+      color:#001faaef;
     }
   </style>
 </head>
 
 <body>
 
-  <div class="box">
-    <h1>สแกน QR Code</h1>
+  <h1>สแกน QR Code</h1>
 
-    <!-- ใส่รูป QR ของคุณตรงนี้ -->
-    <img src="image/620721.jpg" class="qr" alt="QR Code ชำระเงิน">
+  <img src="image/620721.jpg" class="qr" alt="QR Code ชำระเงิน">
 
-    <p class="desc">
-      สำหรับชำระเงินงาน 40 ปี L.C.C
-    </p>
+  <p class="desc">
+    สำหรับชำระเงินงาน 40 ปี L.C.C
+  </p>
 
-    <a href="index.html" class="back">
-      ← ติดต่อเรา
-    </a>
-  </div>
+  <a href="index.html" class="back">
+    ← ติดต่อเรา
+  </a>
 
 </body>
 </html>
